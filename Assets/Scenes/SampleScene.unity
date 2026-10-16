@@ -6878,8 +6878,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 473967650869322432, guid: d2f74205b45462e408b068ac27848cc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5359370572493688048}
   m_SourcePrefab: {fileID: 100100000, guid: d2f74205b45462e408b068ac27848cc8, type: 3}
+--- !u!1 &5359370572493688047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 473967650869322432, guid: d2f74205b45462e408b068ac27848cc8, type: 3}
+  m_PrefabInstance: {fileID: 5359370572493688046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5359370572493688048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5359370572493688047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c56fac0926d0ab478fdf38ec3e8cbb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletScript
+  speed: 10
+  lifetime: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
