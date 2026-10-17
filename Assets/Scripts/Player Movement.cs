@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
     //define the actions
     InputAction moveAction;
 
-    public Vector2 speed;
+    public PlayerSO player1Data;
+
     public Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +24,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Movement here
         Vector2 input = moveAction.ReadValue<Vector2>();
-        rb.linearVelocity = input * speed;
+        rb.linearVelocity = input * player1Data.speed;
     }
 }
