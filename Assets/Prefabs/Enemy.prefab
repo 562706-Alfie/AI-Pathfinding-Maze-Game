@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4827646276673649727}
   - component: {fileID: 2296783225716154625}
   - component: {fileID: 9030462714898960687}
+  - component: {fileID: -8177221077248676323}
   - component: {fileID: 525148113782792620}
   - component: {fileID: 3524139312226697747}
   - component: {fileID: 3340271438976803659}
@@ -176,6 +177,24 @@ MonoBehaviour:
   globalEnemyData: {fileID: 11400000, guid: 3bb52824b5de9af4f9a7f3010c97fda3, type: 2}
   player1Data: {fileID: 11400000, guid: 4f6decafad5e5c64ab32c863679ba76d, type: 2}
   currentHealth: 0
+--- !u!114 &-8177221077248676323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6298458194084341002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f0d26d5c87258499131db9ad4bcf3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisionVisibility
+  player: {fileID: 0}
+  aimTransform: {fileID: 0}
+  player1Data: {fileID: 11400000, guid: 4f6decafad5e5c64ab32c863679ba76d, type: 2}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!195 &525148113782792620
 NavMeshAgent:
   m_ObjectHideFlags: 0

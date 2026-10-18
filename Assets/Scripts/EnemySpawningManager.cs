@@ -6,6 +6,9 @@ using UnityEngine;
 public class EnemySpawningManager : MonoBehaviour
 {
     public EnemySO globalEnemyData;
+    public Transform player;
+    public Transform aimTransform;
+
     List<GameObject> enemySpawnPoints = new();
     public GameObject enemySpawnPoint1;
     public GameObject enemySpawnPoint2;
@@ -36,5 +39,9 @@ public class EnemySpawningManager : MonoBehaviour
         GameObject spawnPoint = enemySpawnPoints[chosenSpawnPoint];
         GameObject clone = Instantiate(enemy, spawnPoint.transform.position, Quaternion.identity);
         globalEnemyData.numberOfEnemies ++;
+
+        VisionVisibility vision = clone.GetComponent<VisionVisibility>(); //FovVisibilty
+        vision.player = player;
+        vision.aimTransform = aimTransform;
     }
 }
