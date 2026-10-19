@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         if (aimAction.WasPressedThisFrame())
         {
             Debug.Log("Aim Button Pressed");
-            ChangeFieldOfView();
+            player1Data.ChangeFieldOfView();
         }
     }
 
@@ -36,19 +36,5 @@ public class PlayerMovement : MonoBehaviour
         // Movement here
         Vector2 input = moveAction.ReadValue<Vector2>();
         rb.linearVelocity = input * player1Data.speed;
-    }
-
-    public void ChangeFieldOfView()
-    {
-        if (player1Data.fov == 120 && player1Data.viewDistance == 15)
-        {
-            player1Data.fov = 60;
-            player1Data.viewDistance = 30;
-        }
-        else 
-        {
-            player1Data.fov = 120;
-            player1Data.viewDistance = 15;
-        }
     }
 }

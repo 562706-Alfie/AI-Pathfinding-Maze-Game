@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySO : ScriptableObject
 {
     public int numberOfEnemies;
+    public int maxNumberOfEnemies;
     public int maxHealth;
     public int damage;
     public float attackCooldown;

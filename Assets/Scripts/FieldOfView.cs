@@ -20,7 +20,7 @@ public class FieldOfView : MonoBehaviour
     {
         Vector3 origin = Vector3.zero;
 
-        int rayCount = 50;
+        int rayCount = 1000;
         float angle = aimTransform.eulerAngles.z - player1Data.fov / 2f;
         float angleIncrease = player1Data.fov / rayCount;
 

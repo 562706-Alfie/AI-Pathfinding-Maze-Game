@@ -23,12 +23,13 @@ public class EnemySpawningManager : MonoBehaviour
         enemySpawnPoints.Add(enemySpawnPoint1);
         enemySpawnPoints.Add(enemySpawnPoint2);
         enemySpawnPoints.Add(enemySpawnPoint3);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(globalEnemyData.numberOfEnemies < 5)
+        if(globalEnemyData.numberOfEnemies < globalEnemyData.maxNumberOfEnemies)
         {
             SpawnEnemy();
         }
@@ -40,7 +41,7 @@ public class EnemySpawningManager : MonoBehaviour
         GameObject clone = Instantiate(enemy, spawnPoint.transform.position, Quaternion.identity);
         globalEnemyData.numberOfEnemies ++;
 
-        VisionVisibility vision = clone.GetComponent<VisionVisibility>(); //FovVisibilty
+        VisionVisibility vision = clone.GetComponent<VisionVisibility>(); //FovVisibility
         vision.player = player;
         vision.aimTransform = aimTransform;
     }

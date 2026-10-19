@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83dca963090e4bd4c80238917359041b, type: 3}
   m_Name: Global Enemy SO
   m_EditorClassIdentifier: Assembly-CSharp::EnemySO
-  numberOfEnemies: 5
+  numberOfEnemies: 10
+  maxNumberOfEnemies: 10
   maxHealth: 100
   damage: 10
   attackCooldown: 2
