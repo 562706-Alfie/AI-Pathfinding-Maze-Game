@@ -23,9 +23,9 @@ public class PlayerGeneral : MonoBehaviour
 
         if (player1Data.health <= 0)
         {
-            camera.transform.position = new Vector3(1000, 1000, 0);
+            //camera.transform.position = new Vector3(1000, 1000, 0);
             gameOver.SetActive(true);
-            gameOver.transform.position = new Vector3(1000, 1000, 0);
+            //gameOver.transform.position = new Vector3(1000, 1000, 0);
             player1Data.GameOver();
         }
     }
